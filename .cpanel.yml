@@ -1,4 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/haddev/public_html/
-    - /bin/cp -R /home/haddev/.output $DEPLOYPATH
+    - /bin/cp -R /home/haddev/.output/public/* $DEPLOYPATH
