@@ -21,6 +21,10 @@
             <Divider color="orange" />
             <NuxtLink to="/skills" class="title__link">Skills in Details</NuxtLink>
         </div>
+
+        <a class="title__link" href="https://github.com/haditabatabaei/haditabatabaei.dev" target="_blank">
+            haditabatabaei.dev's Source Code
+        </a>
     </Box>
 </template>
 
