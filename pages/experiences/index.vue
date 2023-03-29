@@ -1,8 +1,6 @@
 <template>
     <Box>
-        <Typography is="h1" type="title">
-            Experiences
-        </Typography>
+        <BoxHeader title="Experiences" />
         <div class="experience">
             <div class="experience__head">
                 <img class="experience__logo" src="@/assets/images/divar.svg" alt="Logo of divar" title="Divar's Logo"
@@ -124,6 +122,54 @@
                 Skills: docker · Node.js · Git · Nginx · Vue.js · HTML5 · Cascading Style Sheets (CSS)
             </Typography>
         </div>
+        <div class="experience">
+            <div class="experience__head">
+                <img class="experience__logo" src="@/assets/images/medad.jpeg" alt="Logo of Sneeds" title="Sneeds's Logo"
+                    :draggable="false" />
+                <Typography is="h2" type="description">
+                    Medad AI | FrontEnd Developer | Contract
+                </Typography>
+                <Typography class="experience__date" is="p" type="description">
+                    
+                </Typography>
+            </div>
+            <Typography class="experience__desc">
+                Medad AI is a cutting-edge company that specializes in providing innovative solutions to businesses in iran. 
+                Its primary focus is on offering SaaS platforms that leverage the latest advancements in artificial intelligence (AI). 
+                Their flagship products include Recommender systems and Search platforms, which are designed to help businesses enhance customer experience and increase sales conversions.
+            </Typography>
+            <Typography class="experience__duties">
+                - I was responsible for developing company's users panel using React.js from scratch on a contract basis.
+                <br />
+                - I was responsible for developing panel's UI component library.
+                <br />
+                <br />
+                Skills: React.js · Redux.js
+            </Typography>
+        </div>
+        <div class="experience">
+            <div class="experience__head">
+                <img class="experience__logo" src="@/assets/images/vesal.jpeg" alt="Logo of Sneeds" title="Sneeds's Logo"
+                    :draggable="false" />
+                <Typography is="h2" type="description">
+                    Vesal | FrontEnd Developer | Contract
+                </Typography>
+                <Typography class="experience__date" is="p" type="description">
+                    
+                </Typography>
+            </div>
+            <Typography class="experience__desc">
+                Vesal is a leading Iranian media platform that provides users with access to a diverse range of cultural media, from music and podcasts to news and documentaries. Their mission is to make it easy for Iranians to discover and access relevant cultural media in one convenient platform.
+            </Typography>
+            <Typography class="experience__duties">
+                - I was responsible for developing company's main website with Nuxt.js from scratch.
+                <br />
+                - I was responsible for developing features like music queues, playlists and ...
+                <br />
+                <br />
+                Skills: Vue.js · Nuxt.js · Node.js
+            </Typography>
+        </div>
     </Box>
 </template>
 
@@ -164,7 +210,7 @@
     }
 
     &:not(:first-of-type) {
-        margin-top: 24px;
+        margin-top: 48px;
     }
 }
 </style>

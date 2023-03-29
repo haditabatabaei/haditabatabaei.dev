@@ -37,10 +37,10 @@
         padding: 8px 16px;
         color: orange;
         font-size: 18px;
-    }
 
-    &__link:hover {
-        text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
     <Box>
-        <Typography is="h1" type="title">Skills</Typography>
-        <section>
-            <Typography is="h2" type="description">
+        <BoxHeader title="Skills" />
+        <div>
+            <Typography class="skills__title" is="h2" type="description">
                 Javascript, HTML and CSS
             </Typography>
             <Typography type="text">
@@ -10,14 +10,14 @@
                 <br />
                 Furthermore, I possess a deep understanding of CSS concepts and features, including BoxModel, Block Formatting Context (BFC), and various selectors. I utilize Flexbox in almost any scenario.
             </Typography>
-            <Typography is="h2" type="description">
+            <Typography class="skills__title" is="h2" type="description">
                 Typescript
             </Typography>
             <Typography type="text">
                 Personally, I'm not a fan of Typescript due to various reasons. In most cases, writing clean Javascript is more readable and maintainable, especially for front-end web applications.
                 <br />
                 However, I have some limited working experience with Typescript in some of my projects, and my knowledge here is relatively shallow. Although I'm not a fan of Typescript, I respect companies and other developers' opinions, and I can familiarize myself with Typescript projects in no time.            </Typography>
-            <Typography is="h2" type="description">
+            <Typography class="skills__title" is="h2" type="description">
                 React, Next.js
             </Typography>
             <Typography type="text">
@@ -27,7 +27,7 @@ Additionally, at Divar, we developed our own SSR implementation with Express.js 
                 <br />
 Although I have very limited experience with Next.js in some of my projects as contracts, I can jump into a Next.js project with minimal buffer time.
             </Typography>
-            <Typography is="h2" type="description">
+            <Typography class="skills__title" is="h2" type="description">
                 Vue, Nuxt
             </Typography>
             <Typography type="text">
@@ -37,21 +37,21 @@ Although I have very limited experience with Next.js in some of my projects as c
                 <br />
                 Additionally, we started building a UI library with Vue at the time, although unfortunately, I left later.
             </Typography>
-            <Typography is="h2" type="description">
+            <Typography class="skills__title" is="h2" type="description">
                 Webpack and relative toolchain
             </Typography>
             <Typography type="text">
                 I possess a deep understanding of what Webpack does and can even configure it from scratch (with the help of its documentation, of course). When it comes to Webpack, I know what I am doing. I can add a new plugin or edit and update existing ones. Additionally, I can create separate builds with Webpack for various use cases like staging, development, etc.
                 <br />
                 I also built a very simple static site generator with page folder routing using Webpack and Handlebars.            </Typography>
-            <Typography is="h2" type="description">
+            <Typography class="skills__title" is="h2" type="description">
                 DevOps, Docker, K8S and ...
             </Typography>
             <Typography type="text">
                 I have limited experience working with Kubernetes, specifically working with pods, monitoring, and creating and deploying service and ingress. Additionally, I possess limited academic experience with containers and their internal concepts.
 However, I can configure CI/CD pipelines in GitLab and can perform various automations.
             </Typography>
-        </section>
+        </div>
     </Box>
 </template>
 
@@ -60,12 +60,26 @@ However, I can configure CI/CD pipelines in GitLab and can perform various autom
 
 <style lang="scss">
 .skills {
-    &__link {
-        text-decoration: underline;
+    &__title {
+        transition: all .1s ease-in-out;
+        box-shadow: inset 0 -10px orange;
+        display: inline-block;
+
+        &:hover {
+            color: orange;
+        }
+        
+        &:not(:first-of-type) {
+            margin-top: 32px;
+        }
     }
 
-    &__link:hover {
-        color: orange;
+    &__link {
+        text-decoration: underline;
+
+        &:hover {
+            color: orange;
+        }
     }
 }
 </style>

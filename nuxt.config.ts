@@ -7,6 +7,6 @@ export default defineNuxtConfig({
     },
     css: [
         '@/assets/styles/reset.css',
-        '@/assets/styles/normalize.css'
+        '@/assets/styles/normalize.css',
     ]
 })
