@@ -19,13 +19,6 @@ const { exec } = require('node:child_process');
         message
     ] = process.argv
 
-    const result = await execPromise('git status')
-
-    if(result.includes('no changes added to commit')) {
-        console.log('No new changes to release.')
-        return
-    }
-
     await execPromise('yarn generate')
     await execPromise('git add .')
     await execPromise(`git commit -m "deploy: ${message || 'New Version'}"`)
