@@ -1,0 +1,1 @@
+.skills__title{box-shadow:inset 0 -10px orange;display:inline-block;transition:all .1s ease-in-out}.skills__title:hover{color:orange}.skills__title:not(:first-of-type){margin-top:32px}.skills__link{text-decoration:underline}.skills__link:hover{color:orange}
