@@ -18,6 +18,8 @@
             <a class="title__link" href="mailto:hadi.tabatabaei.aut@gmail.com">hadi.tabatabaei.aut@gmail.com</a>
             <Divider color="orange" />
             <NuxtLink to="/experiences" class="title__link">Experiences</NuxtLink>
+            <Divider color="orange" />
+            <NuxtLink to="/skills" class="title__link">Skills in Details</NuxtLink>
         </div>
     </Box>
 </template>
